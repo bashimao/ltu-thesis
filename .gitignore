@@ -1,0 +1,5 @@
+*.bat
+*.log
+DOS2UNIX.EXE
+Examples/multiToC.tex
+multiToC.tex

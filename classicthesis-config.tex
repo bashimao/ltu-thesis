@@ -15,7 +15,7 @@
 % in order to deactivate the time-stamp on the pages
 % ****************************************************************************************************
 \PassOptionsToPackage{eulerchapternumbers,listings,drafting,%
-				 pdfspacing,%floatperchapter,%linedheaders,%
+				 pdfspacing,floatperchapter,%linedheaders,%
 				 subfig,beramono,eulermath,parts}{classicthesis}										
 % ********************************************************************
 % Available options for classicthesis.sty 
@@ -49,9 +49,9 @@
 \newcommand{\myFaculty}{Put data here\xspace}
 \newcommand{\myDepartment}{Put data here\xspace}
 \newcommand{\myUni}{Put data here\xspace}
-\newcommand{\myLocation}{Darmstadt\xspace}
-\newcommand{\myTime}{August 2012\xspace}
-\newcommand{\myVersion}{version 4.1\xspace}
+\newcommand{\myLocation}{Saarbruecken\xspace}
+\newcommand{\myTime}{xxx 2015\xspace}
+\newcommand{\myVersion}{version 4.2\xspace}
 
 % ********************************************************************
 % Setup, finetuning, and useful commands
@@ -99,7 +99,8 @@
 \PassOptionsToPackage{printonlyused,smaller}{acronym}
 	\usepackage{acronym} % nice macros for handling all acronyms in the thesis
 %\renewcommand*{\acsfont}[1]{\textssc{#1}} % for MinionPro
-\renewcommand{\bflabel}[1]{{#1}\hfill} % fix the list of acronyms
+%\renewcommand{\bflabel}[1]{{#1}\hfill} % fix the list of acronyms
+\renewcommand*{\aclabelfont}[1]{\spacedlowsmallcaps{#1}}
 % ****************************************************************************************************
 
 
@@ -111,7 +112,10 @@
 \newcommand{\tableheadline}[1]{\multicolumn{1}{c}{\spacedlowsmallcaps{#1}}}
 \newcommand{\myfloatalign}{\centering} % to be used with each float for alignment
 \usepackage{caption}
-\captionsetup{format=hang,font=small}
+% Thanks to cgnieder and Claus Lahiri
+% http://tex.stackexchange.com/questions/69349/spacedlowsmallcaps-in-caption-label
+\DeclareCaptionLabelFormat{smallcaps}{\bothIfFirst{#1}{~}\MakeTextLowercase{\textsc{#2}}}
+\captionsetup{format=hang,font=small,labelformat=smallcaps}
 \usepackage{subfig}  
 % ****************************************************************************************************
 

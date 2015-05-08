@@ -2,7 +2,7 @@
 % A Classic Thesis Style
 % An Homage to The Elements of Typographic Style
 %
-% Copyright (C) 2012 Andr\'e Miede http://www.miede.de
+% Copyright (C) 2013 Andr\'e Miede http://www.miede.de
 %
 % If you like the style then I would appreciate a postcard. My address 
 % can be found in the file ClassicThesis.pdf. A collection of the 
@@ -81,7 +81,7 @@
 %********************************************************************
 % Mainmatter
 %*******************************************************
-\pagenumbering{arabic}
+\cleardoublepage\pagenumbering{arabic}
 %\setcounter{page}{90}
 % use \cleardoublepage here to avoid problems with pdfbookmark
 \cleardoublepage
@@ -103,6 +103,7 @@ da. Le usate medical addresses pro, europa origine sanctificate nos se.}
 % Backmatter
 %*******************************************************
 \appendix
+%\renewcommand{\thechapter}{\alph{chapter}}
 \cleardoublepage
 \part{Appendix}
 \include{Chapters/Chapter0A}
