@@ -15,7 +15,7 @@
 % in order to deactivate the time-stamp on the pages
 % ****************************************************************************************************
 \PassOptionsToPackage{eulerchapternumbers,listings,drafting,%
-				 pdfspacing,floatperchapter,%linedheaders,%
+				 pdfspacing,%floatperchapter,%linedheaders,%
 				 subfig,beramono,eulermath,parts}{classicthesis}										
 % ********************************************************************
 % Available options for classicthesis.sty 
@@ -49,8 +49,8 @@
 \newcommand{\myFaculty}{Put data here\xspace}
 \newcommand{\myDepartment}{Put data here\xspace}
 \newcommand{\myUni}{Put data here\xspace}
-\newcommand{\myLocation}{Saarbruecken\xspace}
-\newcommand{\myTime}{xxx 2015\xspace}
+\newcommand{\myLocation}{Saarbr\"ucken\xspace}
+\newcommand{\myTime}{June 2015\xspace}
 \newcommand{\myVersion}{version 4.2\xspace}
 
 % ********************************************************************
@@ -95,12 +95,12 @@
 \usepackage{scrhack} % fix warnings when using KOMA with listings package          
 \usepackage{xspace} % to get the spacing after macros right  
 \usepackage{mparhack} % get marginpar right
-\usepackage{fixltx2e} % fixes some LaTeX stuff 
+%\usepackage{fixltx2e} % fixes some LaTeX stuff --> since 2015 in the LaTeX kernel
 \PassOptionsToPackage{printonlyused,smaller}{acronym}
 	\usepackage{acronym} % nice macros for handling all acronyms in the thesis
-%\renewcommand*{\acsfont}[1]{\textssc{#1}} % for MinionPro
-%\renewcommand{\bflabel}[1]{{#1}\hfill} % fix the list of acronyms
-\renewcommand*{\aclabelfont}[1]{\spacedlowsmallcaps{#1}}
+	%\renewcommand{\bflabel}[1]{{#1}\hfill} % fix the list of acronyms --> no longer working
+	%\renewcommand*{\aclabelfont}[1]{\spacedlowsmallcaps{#1}}
+	%\renewcommand*{\acsfont}[1]{\textsc{#1}} 
 % ****************************************************************************************************
 
 
@@ -115,7 +115,7 @@
 % Thanks to cgnieder and Claus Lahiri
 % http://tex.stackexchange.com/questions/69349/spacedlowsmallcaps-in-caption-label
 \DeclareCaptionLabelFormat{smallcaps}{\bothIfFirst{#1}{~}\MakeTextLowercase{\textsc{#2}}}
-\captionsetup{format=hang,font=small,labelformat=smallcaps}
+\captionsetup{font=small,labelformat=smallcaps} % format=hang,
 \usepackage{subfig}  
 % ****************************************************************************************************
 
@@ -189,7 +189,7 @@
     %draft,	% = no hyperlinking at all (useful in b/w printouts)
     colorlinks=true, linktocpage=true, pdfstartpage=3, pdfstartview=FitV,%
     % uncomment the following line if you want to have black links (e.g., for printing)
-    %colorlinks=false, linktocpage=false, pdfborder={0 0 0}, pdfstartpage=3, pdfstartview=FitV,% 
+    %colorlinks=false, linktocpage=false, pdfstartpage=3, pdfstartview=FitV, pdfborder={0 0 0},%
     breaklinks=true, pdfpagemode=UseNone, pageanchor=true, pdfpagemode=UseOutlines,%
     plainpages=false, bookmarksnumbered, bookmarksopen=true, bookmarksopenlevel=1,%
     hypertexnames=true, pdfhighlight=/O,%nesting=true,%frenchlinks,%
@@ -276,9 +276,11 @@
 % ********************************************************************
 %\usepackage[oldstylenums]{kpfonts} % oldstyle notextcomp
 %\usepackage[osf]{libertine}
-%\usepackage{hfoldsty} % Computer Modern with osf
 %\usepackage[light,condensed,math]{iwona}
 %\renewcommand{\sfdefault}{iwona}
 %\usepackage{lmodern} % <-- no osf support :-(
+%\usepackage{cfr-lm} % 
 %\usepackage[urw-garamond]{mathdesign} <-- no osf support :-(
+%\usepackage[default,osfigures]{opensans} % scale=0.95 
+%\usepackage[sfdefault]{FiraSans}
 % ****************************************************************************************************

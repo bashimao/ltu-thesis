@@ -36,7 +36,7 @@ is my overall goal: more beautiful documents, especially theses, as I
 am tired of seeing so many ugly ones.
 
 The whole template and the used style is released under the
-\textsmaller{GNU} General Public License. 
+\acsfont{GNU} General Public License. 
 
 If you like the style then I would appreciate a postcard:
 \begin{center}
@@ -81,6 +81,28 @@ especially these:
 \end{itemize}
 Therefore, please do not break the beauty of the style by changing
 these things unless you really know what you are doing! Please.
+
+\paragraph{Yet Another Important Note:} Since \texttt{classicthesis}'
+first release in 2006, many things have changed in the \LaTeX\ world. 
+Trying to keep up-to-date, \texttt{classicthesis} grew and evolved 
+into many directions, trying to stay (some kind of) stable and be 
+compatible with its port to \mLyX. However, there are still many 
+remains from older times in the code, many dirty workarounds here and 
+there, and several other things I am absolutely not proud of (for 
+example my unwise combination of \acsfont{KOMA} and 
+\texttt{titlesec} etc.).
+\graffito{An outlook into the future of \texttt{classicthesis}.}
+
+Currently, I am looking into how to completely re-design and 
+re-implement \texttt{classicthesis} making it easier to maintain and 
+to use. As a general idea, \texttt{classicthesis.sty} should be 
+developed and distributed separately from the template bundle itself. 
+Excellent spin-offs such as \texttt{arsclassica} could also be 
+integrated (with permission by their authors) as format configurations. 
+Also, current trends of \texttt{microtype}, \texttt{fontspec}, etc. 
+should be included as well. As I am not really into deep 
+\LaTeX\ programming, 
+I will reach out to the \LaTeX\ community for their expertise and help.
 
 
 \section{Organization}
@@ -129,6 +151,7 @@ the following:
 In total, this should get you started in no time.
 
 
+\clearpage
 \section{Style Options}\label{sec:options}
 There are a couple of options for \texttt{classicthesis.sty} that
 allow for a bit of freedom concerning the layout:
@@ -211,7 +234,7 @@ allow for a bit of freedom concerning the layout:
     
 	    \item\texttt{subfig}(\texttt{ure}): is passed to the \texttt{tocloft} 
 	    package to enable compatibility with the \texttt{subfig}(\texttt{ure}) 
-	    package. Use this option if you want use classicthesis with the
+	    package. Use this option if you want use \texttt{classicthesis} with the
 	    \texttt{subfig} package.
     	
 %    \item\texttt{listsseparated}: will add extra space between table
@@ -292,10 +315,9 @@ to get longer lines of text.
 This section will list some information about problems using
 \texttt{classic\-thesis} in general or using it with other packages.
 
-Beta versions of \texttt{classicthesis} can be found at the following 
-Google code repository:
+Beta versions of \texttt{classicthesis} can be found at Bitbucket:
 \begin{center}
-	\url{http://code.google.com/p/classicthesis/}
+	\url{https://bitbucket.org/amiede/classicthesis/}
 \end{center}
 There, you can also post serious bugs and problems you encounter.
 
@@ -313,7 +335,7 @@ Spanish languages need an extra option in order to work with this template:
 \begin{verbatim}
 	\usepackage[spanish,es-lcroman]{babel}
 \end{verbatim}
-Thanks to an unknown person for this information (via Google Code issue reporting). 
+Thanks to an unknown person for this information (via the issue reporting). 
 
 
 \paragraph{Further information for using \texttt{classicthesis} with Spanish (in addition to the above)}
@@ -398,7 +420,7 @@ be found in the folder.
 \section{License}
 \paragraph{GNU General Public License:} This program is free software;
 you can redistribute it and/or modify
- it under the terms of the \textsmaller{GNU} General Public License as
+ it under the terms of the \acsfont{GNU} General Public License as
  published by
  the Free Software Foundation; either version 2 of the License, or
  (at your option) any later version.
@@ -407,14 +429,14 @@ you can redistribute it and/or modify
  but \emph{without any warranty}; without even the implied warranty of
  \emph{merchantability} or \emph{fitness for a particular purpose}.
  See the
- \textsmaller{GNU} General Public License for more details.
+ \acsfont{GNU} General Public License for more details.
 
- You should have received a copy of the \textsmaller{GNU} General
+ You should have received a copy of the \acsfont{GNU} General
  Public License
  along with this program; see the file \texttt{COPYING}.  If not,
  write to
  the Free Software Foundation, Inc., 59 Temple Place - Suite 330,
- Boston, \textsmaller{MA} 02111-1307, \textsmaller{USA}.
+ Boston, MA 02111-1307, USA.
 
 %*****************************************
 %*****************************************

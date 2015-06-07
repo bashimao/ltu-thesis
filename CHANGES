@@ -1,4 +1,4 @@
-Changes in version 4.2 (... 2015)
+Changes in version 4.2 (June 2015)
 o Fixed issue between titlesec and tocloft regarding
   part numbering in the ToC (classicthesis.sty). 
 	Thanks to Enrico Gregorio and Henri Menke.
@@ -9,10 +9,11 @@ o Fixed bug with colored lines and graffiti
 o Changed \vspace*{8ex} to \vspace{8ex} (Contents.tex)	
 o Moved \cleardoublepage from end of Contents.tex 
   to appropriate position in ClassicThesis.tex
-o TODO: Appendix case with floatperchapter (works for captions but not for refs
-o \bflabel of acronym replaced with \aclabelfont
-	still to be tested and representation in text 
-	to be fixed  (\acsfont etc.)
+o Worked on Appendix case with floatperchapter 
+  (works for captions but not for references so far)
+	Thanks to Claus Lahiri and Clemens Niederberger 
+	for their help on this.
+o \bflabel of acronym package removed.
   
 Changes in version 4.1 (August 2012)
 o Working towards XeLaTeX support:
