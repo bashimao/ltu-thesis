@@ -11,7 +11,7 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
-NormalPos.right=1562
+NormalPos.right=1916
 NormalPos.bottom=668
 Class=LaTeXView
 Document=classicthesis-config.tex
@@ -29,7 +29,7 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
-NormalPos.right=1562
+NormalPos.right=1916
 NormalPos.bottom=668
 Class=LaTeXView
 Document=ClassicThesis.tex
@@ -47,7 +47,7 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
-NormalPos.right=1562
+NormalPos.right=1916
 NormalPos.bottom=668
 Class=LaTeXView
 Document=Chapters\Chapter01.tex
@@ -56,25 +56,7 @@ Document=Chapters\Chapter01.tex
 TopLine=311
 Cursor=14950
 
-[Frame3]
-Flags=0
-ShowCmd=1
-MinPos.x=-1
-MinPos.y=-1
-MaxPos.x=-1
-MaxPos.y=-1
-NormalPos.left=4
-NormalPos.top=32
-NormalPos.right=1562
-NormalPos.bottom=668
-Class=LaTeXView
-Document=classicthesis.sty
-
-[Frame3_View0,0]
-TopLine=394
-Cursor=16993
-
 [SessionInfo]
-FrameCount=4
-ActiveFrame=3
+FrameCount=3
+ActiveFrame=2
 

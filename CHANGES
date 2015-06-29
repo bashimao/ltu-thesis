@@ -14,6 +14,13 @@ o Worked on Appendix case with floatperchapter
 	Thanks to Claus Lahiri and Clemens Niederberger 
 	for their help on this.
 o \bflabel of acronym package removed.
+o Converted major files to UTF-8 (thanks to Jörn Hees)
+  (Bibliography.bib excluded for now as BibTeX cannot
+  handle UTF-8, a change to BibLaTeX would we great, 
+  but is currently not supported by LyX)
+o Removed fixltx2e from classicthesis-config.tex and
+  inserted version check into classicthesis.sty 
+  (thanks to Jörn Hees)
   
 Changes in version 4.1 (August 2012)
 o Working towards XeLaTeX support:
