@@ -39,9 +39,9 @@
 % ********************************************************************
 % Triggers for this config
 % ******************************************************************** 
-\usepackage{ifthen}
-\newboolean{enable-backrefs} % enable backrefs in the bibliography
-\setboolean{enable-backrefs}{false} % true false
+%\usepackage{ifthen}
+%\newboolean{enable-backrefs} % enable backrefs in the bibliography
+%\setboolean{enable-backrefs}{false} % true false
 % ****************************************************************************************************
 
 
@@ -59,7 +59,7 @@
 \newcommand{\myDepartment}{Put data here\xspace}
 \newcommand{\myUni}{Put data here\xspace}
 \newcommand{\myLocation}{Saarbrücken\xspace}
-\newcommand{\myTime}{June 2015\xspace}
+\newcommand{\myTime}{August 2015\xspace}
 \newcommand{\myVersion}{version 4.2\xspace}
 
 % ********************************************************************
@@ -84,23 +84,27 @@
 %\PassOptionsToPackage{ngerman,american}{babel}   % change this to your language(s)
 % Spanish languages need extra options in order to work with this template
 %\PassOptionsToPackage{spanish,es-lcroman}{babel}
- \usepackage{babel}					
+	\usepackage{babel}					
 
 \usepackage{csquotes}
 \PassOptionsToPackage{%
-    backend=biber, %instead of bibtex
-    style=authoryear-comp, % Author 1999, 2010
-    bibstyle=authoryear,dashed=false, % dashed: substitute rep. author with ---
+    %backend=biber, %instead of bibtex
+		backend=bibtex8,bibencoding=ascii,%
+		language=auto,%
+		style=numeric-comp,%
+    %style=authoryear-comp, % Author 1999, 2010
+    %bibstyle=authoryear,dashed=false, % dashed: substitute rep. author with ---
     sorting=nyt, % name, year, title
-    maxbibnames=5, % default: 3, et al.
-    backref=true,
+    maxbibnames=10, % default: 3, et al.
+    %backref=true,%
     natbib=true % natbib compatibility mode (\citep and \citet still work)
-    }{biblatex}
-    \usepackage{biblatex}
-\addbibresource{Bibliography.bib}
+}{biblatex}
+	\usepackage{biblatex}
+	\addbibresource{Bibliography.bib}
+	\addbibresource[label=ownpubs]{AMiede_Publications.bib}
 
 \PassOptionsToPackage{fleqn}{amsmath}		% math environments and more by the AMS 
- \usepackage{amsmath}
+	\usepackage{amsmath}
 
 % ******************************************************************** 
 % General useful packages
@@ -111,7 +115,8 @@
 \usepackage{scrhack} % fix warnings when using KOMA with listings package          
 \usepackage{xspace} % to get the spacing after macros right  
 \usepackage{mparhack} % get marginpar right
-%\usepackage{fixltx2e} % fixes some LaTeX stuff --> since 2015 in the LaTeX kernel
+%\usepackage{fixltx2e} % fixes some LaTeX stuff --> since 2015 in the LaTeX kernel (see below)
+%\usepackage[latest]{latexrelease} 
 \PassOptionsToPackage{printonlyused,smaller}{acronym}
 	\usepackage{acronym} % nice macros for handling all acronyms in the thesis
 	%\renewcommand{\bflabel}[1]{{#1}\hfill} % fix the list of acronyms --> no longer working
@@ -178,25 +183,25 @@
 % Setup the style of the backrefs from the bibliography
 % (translate the options to any language you use)
 % ********************************************************************
-\newcommand{\backrefnotcitedstring}{\relax}%(Not cited.)
-\newcommand{\backrefcitedsinglestring}[1]{(Cited on page~#1.)}
-\newcommand{\backrefcitedmultistring}[1]{(Cited on pages~#1.)}
-\ifthenelse{\boolean{enable-backrefs}}%
-{%
-		\PassOptionsToPackage{hyperpageref}{backref}
-		\usepackage{backref} % to be loaded after hyperref package 
-		   \renewcommand{\backreftwosep}{ and~} % separate 2 pages
-		   \renewcommand{\backreflastsep}{, and~} % separate last of longer list
-		   \renewcommand*{\backref}[1]{}  % disable standard
-		   \renewcommand*{\backrefalt}[4]{% detailed backref
-		      \ifcase #1 %
-		         \backrefnotcitedstring%
-		      \or%
-		         \backrefcitedsinglestring{#2}%
-		      \else%
-		         \backrefcitedmultistring{#2}%
-		      \fi}%
-}{\relax}    
+%\newcommand{\backrefnotcitedstring}{\relax}%(Not cited.)
+%\newcommand{\backrefcitedsinglestring}[1]{(Cited on page~#1.)}
+%\newcommand{\backrefcitedmultistring}[1]{(Cited on pages~#1.)}
+%\ifthenelse{\boolean{enable-backrefs}}%
+%{%
+		%\PassOptionsToPackage{hyperpageref}{backref}
+		%\usepackage{backref} % to be loaded after hyperref package 
+		   %\renewcommand{\backreftwosep}{ and~} % separate 2 pages
+		   %\renewcommand{\backreflastsep}{, and~} % separate last of longer list
+		   %\renewcommand*{\backref}[1]{}  % disable standard
+		   %\renewcommand*{\backrefalt}[4]{% detailed backref
+		      %\ifcase #1 %
+		         %\backrefnotcitedstring%
+		      %\or%
+		         %\backrefcitedsinglestring{#2}%
+		      %\else%
+		         %\backrefcitedmultistring{#2}%
+		      %\fi}%
+%}{\relax}    
 
 % ********************************************************************
 % Hyperreferences

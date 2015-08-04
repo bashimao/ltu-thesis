@@ -1,4 +1,4 @@
-Changes in version 4.2 (June 2015)
+Changes in version 4.2 (August 2015)
 o Fixed issue between titlesec and tocloft regarding
   part numbering in the ToC (classicthesis.sty). 
 	Thanks to Enrico Gregorio and Henri Menke.
@@ -16,11 +16,18 @@ o Worked on Appendix case with floatperchapter
 o \bflabel of acronym package removed.
 o Converted major files to UTF-8 (thanks to Jörn Hees)
   (Bibliography.bib excluded for now as BibTeX cannot
-  handle UTF-8, a change to BibLaTeX would we great, 
-  but is currently not supported by LyX)
+  handle UTF-8)
 o Removed fixltx2e from classicthesis-config.tex and
-  inserted version check into classicthesis.sty 
-  (thanks to Jörn Hees)
+  have classicthesis.sty use or emulate the latest 
+	LaTeX kernel via latexrelease (option: latest)
+  (thanks to Jörn Hees).
+o Added support for BibLaTeX in 
+  classicthesis-config.tex and Bibliography.tex
+	(thanks to Jörn Hees).
+	For LyX we will have a work-around for testing.
+o Added an example for one's own publication list
+  (via BibLaTeX) in Publications.tex (renamed from 
+	Publication.tex)
   
 Changes in version 4.1 (August 2012)
 o Working towards XeLaTeX support:
