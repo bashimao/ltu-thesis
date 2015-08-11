@@ -28,7 +28,9 @@ o Added support for BibLaTeX in
 o Added an example for one's own publication list
   (via BibLaTeX) in Publications.tex (renamed from 
 	Publication.tex)
-  
+o Replaced/updated scrpage2 with scrlayer-scrpage 
+  in classicthesis.sty (thanks to Ivo Pletìkosić).
+	
 Changes in version 4.1 (August 2012)
 o Working towards XeLaTeX support:
 	- "ifxetex" package for checking whether

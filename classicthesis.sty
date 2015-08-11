@@ -347,10 +347,12 @@
 % ********************************************************************                
 % headlines
 % ********************************************************************  
-\PassOptionsToPackage{automark}{scrpage2}
-	\RequirePackage{scrpage2} % provides headers and footers (KOMA Script)
+%\PassOptionsToPackage{automark}{scrpage2}
+\PassOptionsToPackage{automark}{scrlayer-scrpage}
+	%\RequirePackage{scrpage2} % provides headers and footers (KOMA Script)
+	\RequirePackage{scrlayer-scrpage} % provides headers and footers (KOMA Script)
     \clearscrheadings
-    \setheadsepline{0pt}
+    %\setheadsepline{0pt}
     \ifthenelse{\boolean{@nochapters}}%
         {\relax}%
         {\renewcommand{\chaptermark}[1]{\markboth{\spacedlowsmallcaps{#1}}{\spacedlowsmallcaps{#1}}}}

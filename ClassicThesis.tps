@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=classicthesis-config.tex
 
 [Frame0_View0,0]
-TopLine=77
-Cursor=5496
+TopLine=0
+Cursor=330
 
 [Frame1]
 Flags=0
@@ -35,8 +35,8 @@ Class=LaTeXView
 Document=ClassicThesis.tex
 
 [Frame1_View0,0]
-TopLine=45
-Cursor=3058
+TopLine=47
+Cursor=3049
 
 [Frame2]
 Flags=0
@@ -54,9 +54,9 @@ Document=Chapters\Chapter01.tex
 
 [Frame2_View0,0]
 TopLine=335
-Cursor=15641
+Cursor=15320
 
 [SessionInfo]
 FrameCount=3
-ActiveFrame=1
+ActiveFrame=2
 
