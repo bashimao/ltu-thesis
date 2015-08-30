@@ -9,18 +9,10 @@ o Fixed bug with colored lines and graffiti
 o Changed \vspace*{8ex} to \vspace{8ex} (Contents.tex)	
 o Moved \cleardoublepage from end of Contents.tex 
   to appropriate position in ClassicThesis.tex
-o Worked on Appendix case with floatperchapter 
-  (works for captions but not for references so far)
-	Thanks to Claus Lahiri and Clemens Niederberger 
-	for their help on this.
 o \bflabel of acronym package removed.
 o Converted major files to UTF-8 (thanks to Jörn Hees)
   (Bibliography.bib excluded for now as BibTeX cannot
   handle UTF-8)
-o Removed fixltx2e from classicthesis-config.tex and
-  have classicthesis.sty use or emulate the latest 
-	LaTeX kernel via latexrelease (option: latest)
-  (thanks to Jörn Hees).
 o Added support for BibLaTeX in 
   classicthesis-config.tex and Bibliography.tex
 	(thanks to Jörn Hees).
@@ -30,6 +22,17 @@ o Added an example for one's own publication list
 	Publication.tex)
 o Replaced/updated scrpage2 with scrlayer-scrpage 
   in classicthesis.sty (thanks to Ivo Pletìkosić).
+X Worked on Appendix case with floatperchapter 
+  (works for captions but not for references so far)
+	Thanks to Claus Lahiri and Clemens Niederberger 
+	for their help on this.
+	[REMOVED DUE TO OTHER PROBLEMS, SEE ISSUE #82]	
+X Removed fixltx2e from classicthesis-config.tex and
+  have classicthesis.sty use or emulate the latest 
+	LaTeX kernel via latexrelease (option: latest)
+  (thanks to Jörn Hees).
+	[REMOVED AS IT IS NOT AVAILABLE IN MANY 
+	DISTRIBUTIONS, SEE ISSUE #107]
 	
 Changes in version 4.1 (August 2012)
 o Working towards XeLaTeX support:

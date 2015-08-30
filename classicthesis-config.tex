@@ -37,7 +37,7 @@
 % ********************************************************************
 
 % ********************************************************************
-% Triggers for this config
+% Triggers for this config (deprecated)
 % ******************************************************************** 
 %\usepackage{ifthen}
 %\newboolean{enable-backrefs} % enable backrefs in the bibliography
@@ -113,8 +113,8 @@
 \usepackage{scrhack} % fix warnings when using KOMA with listings package          
 \usepackage{xspace} % to get the spacing after macros right  
 \usepackage{mparhack} % get marginpar right
-%\usepackage{fixltx2e} % fixes some LaTeX stuff --> since 2015 in the LaTeX kernel (see below)
-%\usepackage[latest]{latexrelease} 
+\usepackage{fixltx2e} % fixes some LaTeX stuff --> since 2015 in the LaTeX kernel (see below)
+%\usepackage[latest]{latexrelease} % will be used once available in more distributions (ISSUE #107)
 \PassOptionsToPackage{printonlyused,smaller}{acronym}
 	\usepackage{acronym} % nice macros for handling all acronyms in the thesis
 	%\renewcommand{\bflabel}[1]{{#1}\hfill} % fix the list of acronyms --> no longer working
@@ -133,8 +133,10 @@
 \usepackage{caption}
 % Thanks to cgnieder and Claus Lahiri
 % http://tex.stackexchange.com/questions/69349/spacedlowsmallcaps-in-caption-label
-\DeclareCaptionLabelFormat{smallcaps}{\bothIfFirst{#1}{~}\MakeTextLowercase{\textsc{#2}}}
-\captionsetup{font=small,labelformat=smallcaps} % format=hang,
+% [REMOVED DUE TO OTHER PROBLEMS, SEE ISSUE #82]	
+%\DeclareCaptionLabelFormat{smallcaps}{\bothIfFirst{#1}{~}\MakeTextLowercase{\textsc{#2}}}
+%\captionsetup{font=small,labelformat=smallcaps} % format=hang,
+\captionsetup{font=small} % format=hang,
 \usepackage{subfig}  
 % ****************************************************************************************************
 
@@ -176,30 +178,7 @@
 \pdfadjustspacing=1 
 \PassOptionsToPackage{pdftex}{graphicx}
 	\usepackage{graphicx} 
-
-% ********************************************************************
-% Setup the style of the backrefs from the bibliography
-% (translate the options to any language you use)
-% ********************************************************************
-%\newcommand{\backrefnotcitedstring}{\relax}%(Not cited.)
-%\newcommand{\backrefcitedsinglestring}[1]{(Cited on page~#1.)}
-%\newcommand{\backrefcitedmultistring}[1]{(Cited on pages~#1.)}
-%\ifthenelse{\boolean{enable-backrefs}}%
-%{%
-		%\PassOptionsToPackage{hyperpageref}{backref}
-		%\usepackage{backref} % to be loaded after hyperref package 
-		   %\renewcommand{\backreftwosep}{ and~} % separate 2 pages
-		   %\renewcommand{\backreflastsep}{, and~} % separate last of longer list
-		   %\renewcommand*{\backref}[1]{}  % disable standard
-		   %\renewcommand*{\backrefalt}[4]{% detailed backref
-		      %\ifcase #1 %
-		         %\backrefnotcitedstring%
-		      %\or%
-		         %\backrefcitedsinglestring{#2}%
-		      %\else%
-		         %\backrefcitedmultistring{#2}%
-		      %\fi}%
-%}{\relax}    
+ 
 
 % ********************************************************************
 % Hyperreferences
