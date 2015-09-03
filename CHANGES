@@ -1,4 +1,4 @@
-Changes in version 4.2 (August 2015)
+Changes in version 4.2 (September 2015)
 o Fixed issue between titlesec and tocloft regarding
   part numbering in the ToC (classicthesis.sty). 
 	Thanks to Enrico Gregorio and Henri Menke.
