@@ -274,20 +274,20 @@ the data in the following lines of \texttt{classicthesis-config.tex:}%
 \marginpar{Modifications in \texttt{classic\-thesis-config.tex}%
 }
 
-\begin{lstlisting}[frame=lt]
-% **************************************************
-% 2. Personal data and user ad-hoc commands
-% **************************************************
-\newcommand{\myTitle}{A Classic Thesis Style\xspace} 
-\newcommand{\mySubtitle}{An Homage to...\xspace} 
+\begin{lstlisting}
+    % **************************************************
+    % 2. Personal data and user ad-hoc commands
+    % **************************************************
+    \newcommand{\myTitle}{A Classic Thesis Style\xspace} 
+    \newcommand{\mySubtitle}{An Homage to...\xspace} 
 \end{lstlisting}
 
 Further customization can be made in \texttt{classicthesis-config.tex}
 by choosing the options to \texttt{classicthesis.sty} 
 (see~\autoref{sec:options}) in a line that looks like this:
 
-\begin{lstlisting}[frame=lt]
-\PassOptionsToPackage{eulerchapternumbers,drafting,listings,subfig,eulermath,parts}{classicthesis}
+\begin{lstlisting}
+    \PassOptionsToPackage{eulerchapternumbers,drafting,listings,subfig,eulermath,parts}{classicthesis}
 \end{lstlisting}
 
 Many other customizations in \texttt{classicthesis-config.tex} are
@@ -314,37 +314,36 @@ There, you can also post serious bugs and problems you encounter.
 \subsection*{Compatibility with the \texttt{glossaries} Package}
 If you want to use the \texttt{glossaries} package, take care of loading it 
 with the following options:
-\begin{verbatim}
+\begin{lstlisting}
     \usepackage[style=long,nolist]{glossaries}
-\end{verbatim}
+\end{lstlisting}
 Thanks to Sven Staehs for this information. 
 
 
 \subsection*{Compatibility with the (Spanish) \texttt{babel} Package}
 Spanish languages need an extra option in order to work with this template:
-\begin{verbatim}
+\begin{lstlisting}
     \usepackage[spanish,es-lcroman]{babel}
-\end{verbatim}
+\end{lstlisting}
 Thanks to an unknown person for this information (via the issue reporting). 
 
 
 \paragraph{Further information for using \texttt{classicthesis} with Spanish (in addition to the above)}
 In the file \texttt{ClassicThesis.tex} activate the language: 
-\begin{verbatim}
+\begin{lstlisting}
     \selectlanguage{spanish}
-\end{verbatim}
+\end{lstlisting}
     
 If there are issues changing \verb|\tablename|, \eg, using this:
-\begin{verbatim}
-    \renewcommand{\bibname}{Referencias}
+\begin{lstlisting}
     \renewcommand{\tablename}{Tabla}
-\end{verbatim}
+\end{lstlisting}
 
 This can be solved by passing \texttt{es-tabla} parameter to \texttt{babel}:
-\begin{verbatim}
+\begin{lstlisting}
     \PassOptionsToPackage{es-tabla,spanish,es-lcroman,english}{babel}
     \usepackage{babel}
-\end{verbatim}
+\end{lstlisting}
 
 But it is also necessary to set \texttt{spanish} in the \verb|\documentclass|.
 

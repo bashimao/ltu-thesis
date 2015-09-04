@@ -5,3 +5,14 @@ Examples/multiToC.tex
 multiToC.tex
 Examples/xetex.def
 desktop.ini
+FrontBackmatter/*.aux
+*.aux
+ClassicThesis-blx.bib
+*.blg
+ClassicThesis.run.xml
+*.lot
+*.lol
+*.lof
+*.bbl
+*.out
+*.toc
