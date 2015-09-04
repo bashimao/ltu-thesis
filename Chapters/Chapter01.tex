@@ -203,7 +203,7 @@ allow for a bit of freedom concerning the layout:
             \item\texttt{minionprospacing}: uses the internal \texttt{textssc}
             command of the \texttt{MinionPro} package for letter spacing. This 
             automatically enables the \texttt{minionpro} option and overrides
-            the \texttt{pdfspacing} option.
+            \texttt{pdfspacing}.
     
         \end{itemize}  
 
@@ -250,7 +250,7 @@ allow for a bit of freedom concerning the layout:
 
    \end{itemize}
 The best way to figure these options out is to try the different
-possibilities and see, what you and your supervisor like best.
+possibilities and see what you and your supervisor like best.
 
 In order to make things easier in general, 
 \texttt{classicthesis-config.tex} 
@@ -260,7 +260,7 @@ contains some useful commands that might help you.
 \section{Customization}\label{sec:custom}
 %(As of v3.0, the Classic Thesis Style for \LaTeX{} and \mLyX{} share
 %the same two \texttt{.sty} files.)
-This section will give you some hints about how to adapt 
+This section will show you some hints about how to adapt 
 \texttt{classicthesis} to your needs.
 
 The file \texttt{classicthesis.sty}
@@ -334,17 +334,6 @@ In the file \texttt{ClassicThesis.tex} activate the language:
     \selectlanguage{spanish}
 \end{verbatim}
     
-In order to get the bibliography style right, you can use the following:
-\begin{verbatim}
-    \bibliographystyle{babplain}
-\end{verbatim}
-
-For this, it is necessary to load the package:
-\begin{verbatim}
-    \usepackage[spanish,fixlanguage]{babelbib}
-    \selectbiblanguage{spanish}
-\end{verbatim}
-
 If there are issues changing \verb|\tablename|, \eg, using this:
 \begin{verbatim}
     \renewcommand{\bibname}{Referencias}
@@ -357,7 +346,7 @@ This can be solved by passing \texttt{es-tabla} parameter to \texttt{babel}:
     \usepackage{babel}
 \end{verbatim}
 
-But it is also necessary set \texttt{spanish} in the \verb|\documentclass|.
+But it is also necessary to set \texttt{spanish} in the \verb|\documentclass|.
 
 Thanks to Alvaro Jaramillo Duque for this information. 
 
@@ -384,15 +373,13 @@ in general, do not hesitate to write them on that postcard of yours.
 
 
 \section{Beyond a Thesis}
-It is easy to use the layout of \texttt{classicthesis.sty} without the
-framework of this bundle. To make it even easier, this section offers 
-some plug-and-play-examples.
-
-The \LaTeX -sources of these examples can be found in the folder 
-with the name \texttt{Examples}. They have been tested with  
+The layout of \texttt{classicthesis.sty} can be easily used without the
+framework of this template. A few examples where it was used to typeset 
+an article, a book or a curriculum vitae can be found in the folder 
+\texttt{Examples}. The examples have been tested with  
 \texttt{latex} and \texttt{pdflatex} and are easy to compile. To 
-assure you even a bit more, PDFs built from the sources can also 
-be found in the folder. 
+encourage you even more, PDFs built from the sources can be found in the 
+same folder. 
 %(It might be necessary to adjust the path to 
 %\texttt{classicthesis.sty} and \texttt{Bibliography.bib} within the 
 %examples.)
@@ -417,7 +404,7 @@ you can redistribute it and/or modify
 
  This program is distributed in the hope that it will be useful,
  but \emph{without any warranty}; without even the implied warranty of
- \emph{merchantability} or \emph{fitness for a particular purpose}.
+ \emph{merchant\-ability} or \emph{fitness for a particular purpose}.
  See the
  \acsfont{GNU} General Public License for more details.
 
