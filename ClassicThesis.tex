@@ -2,7 +2,7 @@
 % A Classic Thesis Style
 % An Homage to The Elements of Typographic Style
 %
-% Copyright (C) 2012 Andr\'e Miede http://www.miede.de
+% Copyright (C) 2015 André Miede http://www.miede.de
 %
 % If you like the style then I would appreciate a postcard. My address 
 % can be found in the file ClassicThesis.pdf. A collection of the 
@@ -26,18 +26,7 @@
 % Boston, MA 02111-1307, USA.
 %
 % **************************************************************************************************************
-% Note:
-%    * You must not use "u etc. in strings/commands that will be spaced out (use \"u or real umlauts instead)
-%    * New enumeration (small caps): \begin{aenumerate} \end{aenumerate}
-%    * For margin notes: \marginpar or \graffito{}
-%    * Do not use bold fonts in this style, it is designed around them
-%    * Use tables as in the examples
-%    * See classicthesis-preamble.sty for useful commands
-% **************************************************************************************************************
-% To Do:
-%		 * [high] Check this out: http://www.golatex.de/koma-script-warnung-in-verbindung-mit-listings-package-t2058.html
-%    * [medium] mathbb in section-titles/chapter-titles => disappears somehow in headlines!!!
-% **************************************************************************************************************
+\RequirePackage{fix-cm} % fix some latex issues see: http://texdoc.net/texmf-dist/doc/latex/base/fixltx2e.pdf
 \documentclass[ twoside,openright,titlepage,numbers=noenddot,headinclude,%1headlines,% letterpaper a4paper
                 footinclude=true,cleardoublepage=empty,abstractoff, % <--- obsolete, remove (todo)
                 BCOR=5mm,paper=a4,fontsize=11pt,%11pt,a4paper,%
@@ -48,6 +37,12 @@
 % Note: Make all your adjustments in here
 %*******************************************************
 \input{classicthesis-config}
+
+%********************************************************************
+% Bibliographies
+%*******************************************************
+\addbibresource{Bibliography.bib}
+\addbibresource[label=ownpubs]{AMiede_Publications.bib}
 
 %********************************************************************
 % Hyphenation
@@ -74,14 +69,14 @@
 \cleardoublepage\include{FrontBackmatter/Dedication}
 %\cleardoublepage\include{FrontBackmatter/Foreword}
 \cleardoublepage\include{FrontBackmatter/Abstract}
-\cleardoublepage\include{FrontBackmatter/Publication}
+\cleardoublepage\include{FrontBackmatter/Publications}
 \cleardoublepage\include{FrontBackmatter/Acknowledgments}
 \pagestyle{scrheadings}
 \cleardoublepage\include{FrontBackmatter/Contents}
 %********************************************************************
 % Mainmatter
 %*******************************************************
-\pagenumbering{arabic}
+\cleardoublepage\pagenumbering{arabic}
 %\setcounter{page}{90}
 % use \cleardoublepage here to avoid problems with pdfbookmark
 \cleardoublepage
@@ -103,6 +98,7 @@ da. Le usate medical addresses pro, europa origine sanctificate nos se.}
 % Backmatter
 %*******************************************************
 \appendix
+%\renewcommand{\thechapter}{\alph{chapter}}
 \cleardoublepage
 \part{Appendix}
 \include{Chapters/Chapter0A}
@@ -110,8 +106,8 @@ da. Le usate medical addresses pro, europa origine sanctificate nos se.}
 % Other Stuff in the Back
 %*******************************************************
 \cleardoublepage\include{FrontBackmatter/Bibliography}
-\cleardoublepage\include{FrontBackmatter/Colophon}
 \cleardoublepage\include{FrontBackmatter/Declaration}
+\cleardoublepage\include{FrontBackmatter/Colophon}
 % ********************************************************************
 % Game Over: Restore, Restart, or Quit?
 %*******************************************************

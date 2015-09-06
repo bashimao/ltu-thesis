@@ -1,26 +1,46 @@
 LIST OF FILES FOR ClassicThesis.tex
 
  *File List*
-scrreprt.cls    2012/07/29 v3.11b KOMA-Script document class (report)
-scrkbase.sty    2012/07/29 v3.11b KOMA-Script package (KOMA-Script-dependent ba
-sics and keyval usage)
- scrbase.sty    2012/07/29 v3.11b KOMA-Script package (KOMA-Script-independent 
-basics and keyval usage)
-  keyval.sty    1999/03/16 v1.13 key=value parser (DPC)
-scrlfile.sty    2012/06/15 v3.12 KOMA-Script package (loading files)
-tocbasic.sty    2012/04/04 v3.10b KOMA-Script package (handling toc-files)
-scrsize11pt.clo    2012/07/29 v3.11b KOMA-Script font size class option (11pt)
-typearea.sty    2012/07/29 v3.11b KOMA-Script package (type area)
+  fix-cm.sty    2015/01/14 v1.1t fixes to LaTeX
+  ts1enc.def    2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+scrreprt.cls    2015/07/02 v3.18 KOMA-Script document class (report)
+scrkbase.sty    2015/07/02 v3.18 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+ scrbase.sty    2015/07/02 v3.18 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+  keyval.sty    2014/10/28 v1.15 key=value parser (DPC)
+scrlfile.sty    2015/07/02 v3.18 KOMA-Script package (loading files)
+tocbasic.sty    2015/07/02 v3.18 KOMA-Script package (handling toc-files)
+scrsize11pt.clo    2015/07/02 v3.18 KOMA-Script font size class option (11pt)
+typearea.sty    2015/07/02 v3.18 KOMA-Script package (type area)
 classicthesis-config.tex
-  ifthen.sty    2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
-inputenc.sty    2008/03/30 v1.1d Input encoding file
-  latin9.def    2008/03/30 v1.1d Input encoding file
-   babel.sty    2008/07/08 v3.8m The Babel package
+inputenc.sty    2015/03/17 v1.2c Input encoding file
+    utf8.def    2015/06/27 v1.1n UTF-8 support for inputenc
+   t1enc.dfu    2015/06/27 v1.1n UTF-8 support for inputenc
+  ot1enc.dfu    2015/06/27 v1.1n UTF-8 support for inputenc
+  omsenc.dfu    2015/06/27 v1.1n UTF-8 support for inputenc
+  ts1enc.dfu    2015/06/27 v1.1n UTF-8 support for inputenc
+   babel.sty    2015/08/03 3.9m The Babel package
  bblopts.cfg    2006/07/31 v1.0 MiKTeX 'babel' configuration
-ngermanb.ldf    2008/07/06 v2.6n new German support from the babel system
- english.ldf    2005/03/30 v3.3o English support from the babel system
-  natbib.sty    2010/09/13 8.31b (PWD, AO)
- amsmath.sty    2000/07/18 v2.13 AMS math features
+ ngerman.ldf    2013/12/13 v2.7 German support for babel (new orthography)
+ english.ldf    2012/08/20 v3.3p English support from the babel system
+csquotes.sty    2015/07/18 v5.1f context-sensitive quotations (JAW)
+etoolbox.sty    2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+csquotes.def    2015/07/18 v5.1f csquotes generic definitions (JAW)
+csquotes.cfg    
+biblatex.sty    2013/01/10 v2.5 programmable bibliographies (PK/JW/AB)
+biblatex1.sty    2013/01/10 v2.5 programmable bibliographies (bibtex) (PK/JW/AB)
+  logreq.sty    2010/08/04 v1.0 xml request logger
+  logreq.def    2010/08/04 v1.0 logreq spec v1.0
+  ifthen.sty    2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+     url.sty    2013/09/16  ver 3.4  Verb mode for urls, etc.
+blx-compat.def    2013/01/10 v2.5 biblatex compatibility (PK/JW/AB)
+biblatex.def    
+blx-natbib.def    2013/01/10 v2.5 biblatex compatibility (PK/JW/AB)
+standard.bbx    2013/01/10 v2.5 biblatex bibliography style (PK/JW/AB)
+ numeric.bbx    2013/01/10 v2.5 biblatex bibliography style (PK/JW/AB)
+numeric-comp.bbx    2013/01/10 v2.5 biblatex bibliography style (PK/JW/AB)
+numeric-comp.cbx    2013/01/10 v2.5 biblatex citation style (PK/JW/AB)
+biblatex.cfg    
+ amsmath.sty    2013/01/14 v2.14 AMS math features
  amstext.sty    2000/06/29 v2.01
   amsgen.sty    1999/11/30 v2.0
   amsbsy.sty    1999/11/29 v1.2d
@@ -29,33 +49,34 @@ ngermanb.ldf    2008/07/06 v2.6n new German support from the babel system
    t1enc.def    2005/09/27 v1.99g Standard LaTeX file
 textcomp.sty    2005/09/27 v1.99g Standard LaTeX package
   ts1enc.def    2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
- scrhack.sty    2012/07/29 v3.11b KOMA-Script package (hacking other packages)
-  xspace.sty    2009/10/20 v1.13 Space after command names (DPC,MH)
+ scrhack.sty    2015/07/02 v3.18 KOMA-Script package 
+  xspace.sty    2014/10/28 v1.13 Space after command names (DPC,MH)
 mparhack.sty    2005/04/17 v1.4 (T. Sgouros and S. Ulrich)
-fixltx2e.sty    2006/09/13 v1.1m fixes to LaTeX
- acronym.sty    2010/09/08 v1.36 Support for acronyms (Tobias Oetiker)
-  suffix.sty    2006/07/15 1.5 Variant command support
+fixltx2e.sty    2015/06/22 v2.0b fixes to LaTeX (obsolete)
+ acronym.sty    2015/03/21 v1.41 Support for acronyms (Tobias Oetiker)
+  suffix.sty    2006/07/15 1.5a Variant command support
+ xstring.sty    2013/10/13  v1.7c  String manipulations (C Tellechea)
  relsize.sty    2003/07/04 ver 3.1
-tabularx.sty    1999/01/07 v2.07 `tabularx' package (DPC)
-   array.sty    2008/09/09 v2.4c Tabular extension package (FMi)
- caption.sty    2012/02/19 v3.2f Customizing captions (AR)
-caption3.sty    2012/01/12 v1.4b caption3 kernel (AR)
+tabularx.sty    2014/10/28 v2.10 `tabularx' package (DPC)
+   array.sty    2014/10/28 v2.4c Tabular extension package (FMi)
+ caption.sty    2013/05/02 v3.3-89 Customizing captions (AR)
+caption3.sty    2013/05/02 v1.6-88 caption3 kernel (AR)
   subfig.sty    2005/06/28 ver: 1.3 subfig package
-listings.sty    2007/02/22 1.4 (Carsten Heinz)
- lstmisc.sty    2007/02/22 1.4 (Carsten Heinz)
-listings.cfg    2007/02/22 1.4 listings configuration
-listings.hak    2012/07/29 v3.11b KOMA-Script hacking package listings
-lstlang1.sty    2004/09/05 1.3 listings language file
-lstlang2.sty    2004/09/05 1.3 listings language file
-lstlang3.sty    2004/09/05 1.3 listings language file
-lstlang1.sty    2004/09/05 1.3 listings language file
-lstlang2.sty    2004/09/05 1.3 listings language file
-lstlang3.sty    2004/09/05 1.3 listings language file
-lstlang1.sty    2004/09/05 1.3 listings language file
-lstlang2.sty    2004/09/05 1.3 listings language file
-lstlang3.sty    2004/09/05 1.3 listings language file
- lstmisc.sty    2007/02/22 1.4 (Carsten Heinz)
-hyperref.sty    2012/08/03 v6.82y Hypertext links for LaTeX
+listings.sty    2015/06/04 1.6 (Carsten Heinz)
+ lstmisc.sty    2015/06/04 1.6 (Carsten Heinz)
+listings.cfg    2015/06/04 1.6 listings configuration
+listings.hak    2015/07/02 v3.18 KOMA-Script package (hacking package listings)
+lstlang1.sty    2015/06/04 1.6 listings language file
+lstlang2.sty    2015/06/04 1.6 listings language file
+lstlang3.sty    2015/06/04 1.6 listings language file
+lstlang1.sty    2015/06/04 1.6 listings language file
+lstlang2.sty    2015/06/04 1.6 listings language file
+lstlang3.sty    2015/06/04 1.6 listings language file
+lstlang1.sty    2015/06/04 1.6 listings language file
+lstlang2.sty    2015/06/04 1.6 listings language file
+lstlang3.sty    2015/06/04 1.6 listings language file
+ lstmisc.sty    2015/06/04 1.6 (Carsten Heinz)
+hyperref.sty    2012/11/06 v6.83m Hypertext links for LaTeX
 hobsub-hyperref.sty    2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
 hobsub-generic.sty    2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
   hobsub.sty    2012/04/25 v1.12 Construct package bundles (HO)
@@ -83,38 +104,43 @@ refcount.sty    2011/10/16 v3.4 Data extraction from label references (HO)
  ifxetex.sty    2010/09/12 v0.6 Provides ifxetex conditional
  auxhook.sty    2011/03/04 v1.3 Hooks for auxiliary files (HO)
 kvoptions.sty    2011/06/30 v3.11 Key value format for package options (HO)
-  pd1enc.def    2012/08/03 v6.82y Hyperref: PDFDocEncoding definition (HO)
+  pd1enc.def    2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 hyperref.cfg    2002/06/06 v1.2 hyperref configuration of TeXLive
-     url.sty    2006/04/12  ver 3.3  Verb mode for urls, etc.
- hpdftex.def    2012/08/03 v6.82y Hyperref driver for pdfTeX
+ hpdftex.def    2012/11/06 v6.83m Hyperref driver for pdfTeX
 rerunfilecheck.sty    2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
-graphicx.sty    1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
-graphics.sty    2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+graphicx.sty    2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+graphics.sty    2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
     trig.sty    1999/03/16 v1.09 sin cos tan (DPC)
 graphics.cfg    2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
   pdftex.def    2011/05/27 v0.06d Graphics/color for pdfTeX
-classicthesis.sty    2012/08/12 v4.1 Typographic style for a classic-looking th
-esis
+classicthesis.sty    2015/09/06 v4.2 Typographic style for a classic-looking thesis
   xcolor.sty    2007/01/21 v2.11 LaTeX color extensions (UK)
    color.cfg    2007/01/18 v1.5 color configuration of teTeX/TeXLive
-dvipsnam.def    1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+dvipsnam.def    2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
 mathpazo.sty    2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
 beramono.sty    2004/01/31 (WaS)
  eulervm.sty    2005/01/11 v4.0 (WaS)
-microtype.sty    2010/01/10 v2.4 Micro-typography with pdfTeX (RS)
-microtype.cfg    2010/01/10 v2.4 microtype main configuration file (RS)
+microtype.sty    2013/05/23 v2.5a Micro-typographical refinements (RS)
+microtype-pdftex.def    2013/05/23 v2.5a Definitions specific to pdftex (RS)
+microtype.cfg    2013/05/23 v2.5a microtype main configuration file (RS)
 booktabs.sty    2005/04/14 v1.61803 publication quality tables
 textcase.sty    2004/10/07 v0.07 Text only upper/lower case changing (DPC)
-scrpage2.sty    2010/04/22 v2.5 LaTeX2e KOMA-Script package
+scrlayer-scrpage.sty    2015/07/02 v3.18 KOMA-Script package (end user interface for scrlayer)
+scrlayer.sty    2015/07/02 v3.18 KOMA-Script package (defining layers and page styles)
 titlesec.sty    2011/12/15 v2.10.0 Sectioning titles
- tocloft.sty    2010/10/13 v2.3e parameterised ToC, etc., typesetting
- scrtime.sty    2012/07/29 v3.11b KOMA-Script package (time of LaTeX run)
+ tocloft.sty    2013/05/02 v2.3f parameterised ToC, etc., typesetting
+ scrtime.sty    2015/07/02 v3.18 KOMA-Script package (time of LaTeX run)
 prelim2e.sty    2009/05/29 v1.3 prelim2e Package (MS)
 everyshi.sty    2001/05/15 v3.00 EveryShipout Package (MS)
 remreset.sty    
-  ts1cmr.fd    1999/05/25 v2.5h Standard LaTeX font definitions
+ english.lbx    2013/01/10 v2.5 biblatex localization (PK/JW/AB)
+american.lbx    2013/01/10 v2.5 biblatex localization (PK/JW/AB)
+  german.lbx    2013/01/10 v2.5 biblatex localization (PK/JW/AB)
+ ngerman.lbx    2013/01/10 v2.5 biblatex localization (PK/JW/AB)
   t1pplj.fd    2004/09/06 font definitions for T1/pplj.
- nameref.sty    2012/07/31 v2.42 Cross-referencing by name of section
+ClassicThesis.bbl
+ClassicThesis1-blx.bbl
+ nameref.sty    2012/10/27 v2.43 Cross-referencing by name of section
 gettitlestring.sty    2010/12/03 v1.4 Cleanup title references (HO)
 ClassicThesis.out
 ClassicThesis.out
@@ -128,20 +154,16 @@ FrontBackmatter/Titleback.tex
  ts1pplj.fd    2004/09/06 font definitions for TS1/pplj.
 FrontBackmatter/Dedication.tex
 FrontBackmatter/Abstract.tex
-FrontBackmatter/Publication.tex
-FrontBackmatter/Acknowledgments.tex
    uzeur.fd    2005/01/11 v4.0 (WaS)
   mt-eur.cfg    2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
    uzeus.fd    2005/01/11 v4.0 (WaS)
   mt-eus.cfg    2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
   uzeuex.fd    2005/01/11 v4.0 (WaS)
  ot1zplm.fd    2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+FrontBackmatter/Publications.tex
+FrontBackmatter/Acknowledgments.tex
 FrontBackmatter/Contents.tex
-  t1cmss.fd    1999/05/25 v2.5h Standard LaTeX font definitions
 Chapters/Chapter01.tex
-Examples/classicthesis-article.tex
-Examples/classicthesis-book.tex
-Examples/classicthesis-cv.tex
 Chapters/Chapter02.tex
 gfx/example_1.jpg
 gfx/example_2.jpg
@@ -149,8 +171,8 @@ gfx/example_3.jpg
 gfx/example_4.jpg
 Chapters/Chapter03.tex
 Chapters/Chapter0A.tex
+lstlang1.sty    2015/06/04 1.6 listings language file
 FrontBackmatter/Bibliography.tex
-ClassicThesis.bbl
-FrontBackmatter/Colophon.tex
 FrontBackmatter/Declaration.tex
+FrontBackmatter/Colophon.tex
  ***********
