@@ -9,7 +9,9 @@ o Fixed bug with colored lines and graffiti
 o Changed \vspace*{8ex} to \vspace{8ex} (Contents.tex)	
 o Moved \cleardoublepage from end of Contents.tex 
   to appropriate position in ClassicThesis.tex
-o \bflabel of acronym package removed.
+o \bflabel of acronym package removed, as it was 
+  removed from acronym package and caused errors.
+  Now set \aclabelfont to \acsfont for consistency.
 o Converted major files to UTF-8 (thanks to Jörn Hees)
   (Bibliography.bib excluded for now as BibTeX cannot
   handle UTF-8)

@@ -4,10 +4,8 @@ LIST OF FILES FOR ClassicThesis.tex
   fix-cm.sty    2015/01/14 v1.1t fixes to LaTeX
   ts1enc.def    2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 scrreprt.cls    2015/07/02 v3.18 KOMA-Script document class (report)
-scrkbase.sty    2015/07/02 v3.18 KOMA-Script package (KOMA-Script-dependent bas
-ics and keyval usage)
- scrbase.sty    2015/07/02 v3.18 KOMA-Script package (KOMA-Script-independent b
-asics and keyval usage)
+scrkbase.sty    2015/07/02 v3.18 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+ scrbase.sty    2015/07/02 v3.18 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
   keyval.sty    2014/10/28 v1.15 key=value parser (DPC)
 scrlfile.sty    2015/07/02 v3.18 KOMA-Script package (loading files)
 tocbasic.sty    2015/07/02 v3.18 KOMA-Script package (handling toc-files)
@@ -29,8 +27,7 @@ etoolbox.sty    2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
 csquotes.def    2015/07/18 v5.1f csquotes generic definitions (JAW)
 csquotes.cfg    
 biblatex.sty    2013/01/10 v2.5 programmable bibliographies (PK/JW/AB)
-biblatex1.sty    2013/01/10 v2.5 programmable bibliographies (bibtex) (PK/JW/AB
-)
+biblatex1.sty    2013/01/10 v2.5 programmable bibliographies (bibtex) (PK/JW/AB)
   logreq.sty    2010/08/04 v1.0 xml request logger
   logreq.def    2010/08/04 v1.0 logreq spec v1.0
   ifthen.sty    2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -69,7 +66,6 @@ listings.sty    2015/06/04 1.6 (Carsten Heinz)
  lstmisc.sty    2015/06/04 1.6 (Carsten Heinz)
 listings.cfg    2015/06/04 1.6 listings configuration
 listings.hak    2015/07/02 v3.18 KOMA-Script package (hacking package listings)
-
 lstlang1.sty    2015/06/04 1.6 listings language file
 lstlang2.sty    2015/06/04 1.6 listings language file
 lstlang3.sty    2015/06/04 1.6 listings language file
@@ -117,8 +113,7 @@ graphics.sty    2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
     trig.sty    1999/03/16 v1.09 sin cos tan (DPC)
 graphics.cfg    2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
   pdftex.def    2011/05/27 v0.06d Graphics/color for pdfTeX
-classicthesis.sty    2015/08/30 v4.2 Typographic style for a classic-looking th
-esis
+classicthesis.sty    2015/09/06 v4.2 Typographic style for a classic-looking thesis
   xcolor.sty    2007/01/21 v2.11 LaTeX color extensions (UK)
    color.cfg    2007/01/18 v1.5 color configuration of teTeX/TeXLive
 dvipsnam.def    2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
@@ -130,10 +125,8 @@ microtype-pdftex.def    2013/05/23 v2.5a Definitions specific to pdftex (RS)
 microtype.cfg    2013/05/23 v2.5a microtype main configuration file (RS)
 booktabs.sty    2005/04/14 v1.61803 publication quality tables
 textcase.sty    2004/10/07 v0.07 Text only upper/lower case changing (DPC)
-scrlayer-scrpage.sty    2015/07/02 v3.18 KOMA-Script package (end user interfac
-e for scrlayer)
-scrlayer.sty    2015/07/02 v3.18 KOMA-Script package (defining layers and page 
-styles)
+scrlayer-scrpage.sty    2015/07/02 v3.18 KOMA-Script package (end user interface for scrlayer)
+scrlayer.sty    2015/07/02 v3.18 KOMA-Script package (defining layers and page styles)
 titlesec.sty    2011/12/15 v2.10.0 Sectioning titles
  tocloft.sty    2013/05/02 v2.3f parameterised ToC, etc., typesetting
  scrtime.sty    2015/07/02 v3.18 KOMA-Script package (time of LaTeX run)
@@ -142,6 +135,8 @@ everyshi.sty    2001/05/15 v3.00 EveryShipout Package (MS)
 remreset.sty    
  english.lbx    2013/01/10 v2.5 biblatex localization (PK/JW/AB)
 american.lbx    2013/01/10 v2.5 biblatex localization (PK/JW/AB)
+  german.lbx    2013/01/10 v2.5 biblatex localization (PK/JW/AB)
+ ngerman.lbx    2013/01/10 v2.5 biblatex localization (PK/JW/AB)
   t1pplj.fd    2004/09/06 font definitions for T1/pplj.
 ClassicThesis.bbl
 ClassicThesis1-blx.bbl
@@ -176,6 +171,7 @@ gfx/example_3.jpg
 gfx/example_4.jpg
 Chapters/Chapter03.tex
 Chapters/Chapter0A.tex
+lstlang1.sty    2015/06/04 1.6 listings language file
 FrontBackmatter/Bibliography.tex
 FrontBackmatter/Declaration.tex
 FrontBackmatter/Colophon.tex
