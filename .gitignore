@@ -16,3 +16,4 @@ ClassicThesis.run.xml
 *.bbl
 *.out
 *.toc
+__FOR_CTAN_UPLOAD.txt

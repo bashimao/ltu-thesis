@@ -35,7 +35,7 @@ Class=LaTeXView
 Document=ClassicThesis.tex
 
 [Frame1_View0,0]
-TopLine=15
+TopLine=18
 Cursor=1765
 
 [Frame2]
@@ -53,8 +53,8 @@ Class=LaTeXView
 Document=Chapters\Chapter01.tex
 
 [Frame2_View0,0]
-TopLine=0
-Cursor=181
+TopLine=51
+Cursor=3243
 
 [Frame3]
 Flags=0
