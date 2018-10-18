@@ -1,0 +1,61 @@
+%----------------------------------------------------------------------------------------
+%  Table of Contents
+%----------------------------------------------------------------------------------------
+\refstepcounter{dummy}
+\pdfbookmark[1]{\contentsname}{tableofcontents} % Bookmark name visible in a PDF viewer
+\setcounter{tocdepth}{2}
+\setcounter{secnumdepth}{3}
+\manualmark
+\markboth{\spacedlowsmallcaps{\contentsname}}{\spacedlowsmallcaps{\contentsname}}
+\tableofcontents
+\automark[section]{chapter}
+\renewcommand{\chaptermark}[1]{\markboth{\spacedlowsmallcaps{#1}}{\spacedlowsmallcaps{#1}}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\enspace\spacedlowsmallcaps{#1}}}
+
+\clearpage
+
+
+\begingroup 
+\let\clearpage\relax
+\let\cleardoublepage\relax
+\let\cleardoublepage\relax
+
+
+%----------------------------------------------------------------------------------------
+%  List of Figures
+%----------------------------------------------------------------------------------------
+\refstepcounter{dummy}
+\listoffigures
+\vspace{8ex}
+\newpage
+
+
+%----------------------------------------------------------------------------------------
+%  List of Tables
+%----------------------------------------------------------------------------------------
+\refstepcounter{dummy}
+\listoftables
+\vspace{8ex}
+\newpage
+
+
+%----------------------------------------------------------------------------------------
+%  List of Listings
+%---------------------------------------------------------------------------------------- 
+\refstepcounter{dummy}
+\lstlistoflistings 
+\addcontentsline{toc}{chapter}{\lstlistlistingname}
+\vspace{8ex}
+\newpage
+
+
+%----------------------------------------------------------------------------------------
+%  List of Algorithms
+%---------------------------------------------------------------------------------------- 
+\refstepcounter{dummy}
+\listofalgorithms
+\addtocontents{loa}{\def\string\figurename{Algorithm}}
+\vspace{8ex}
+\newpage
+
+\endgroup

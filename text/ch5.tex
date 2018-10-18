@@ -1,0 +1,118 @@
+\hinttext{!!!ACTION REQUIRED!!!}
+\hinttext{The structure I defined is generic and will most likely have to be adapted. I suggest that you skim through the pages and then clear the files \texttt{text/ch2.tex} to \texttt{text/ch7.tex} before you start writing.}
+
+In \autoref{s:Contribution-2-Motivation} we discuss how ... \hinttext{Explain how this chapter is structured. Make sure you cover all sections!} We summarize our discussion in \autoref{s:Contribution-2-Summary}.
+
+\section{Motivation}
+\label{s:Contribution-2-Motivation}
+
+Well... You have to start somewhere. Explain what you did and why. You may assume that the reader already knows the background, related works and major contribution~1.
+
+\section{Major point 1}
+\label{s:Contribution-2-Major-1}
+Develop your idea! For example, discuss the axioms that underpin the inner workings of your algorithm.
+
+In case you want to use tables, use either \texttt{tabular} or \texttt{tabularx} (fixed width) in a \texttt{table} environment. Aside from the default column types, we have configured the fixed-width column-types \texttt{L}, \texttt{C} and \texttt{R} as demonstrated in \autoref{t:Example-Table}.
+
+\begin{table}[t]
+  \centering
+  \begin{tabularx}{\textwidth}{ L{2.5cm} | R{2cm} | C{2cm} | X }
+    \textbf{Name} & \makecell[c]{\textbf{Units of }\\\textbf{Spice}\\\textbf{consumed}} & \makecell[c]{\textbf{House}\\\textbf{Harkonnen}} & \textbf{Comments} \\
+    \hline
+    Feyd-Rautha  &  19 & yes & Hey, that's me! \\
+    Paul         &  18 & no  & Heir to House Atreides \\
+    Valdimir     & 142 & yes & My boss! \\
+    Piter        & 242 & yes & Out Mentat \\
+    Shaddam IV.  & 156 & no  & Emperor of the known universe \\
+    Thufir       & 261 & no  & Mentat of the Atreides
+  \end{tabularx}
+  \caption{A very simple example table!}
+  \label{t:Example-Table}
+\end{table}
+
+
+\subsection{Minor idea 1}
+\label{s:Contribution-2-Major-1-Minor-1}
+Develop your idea! For example, explain how your algorithm actually works.
+
+\subsubsection{For structuring...}
+Develop your idea!
+
+\subsubsection{For structuring...}
+Develop your idea!
+
+\subsection{Minor idea 2}
+\label{s:Contribution-2-Major-1-Minor-2}
+Develop your idea! For example, explain how the theoretical limits of your approach.
+
+\subsubsection{For structuring...}
+Develop your idea!
+
+\subsubsection{For structuring...}
+Develop your idea!
+
+\section{Major point 2}
+\label{s:Contribution-2-Major-2}
+Develop your idea! For example, discuss the difficulties when implementing the proposed algorithm in software.
+
+\subsection{Minor idea 1}
+\label{s:Contribution-2-Major-2-Minor-1}
+Develop your idea! For example, properties of your implementation.
+
+\subsubsection{For structuring the section...}
+Develop your idea!
+
+\subsubsection{For structuring the section...}
+Develop your idea! If you think it helps, you can use algorithms as shown below in \autoref{a:Bogosort}.
+
+\begin{algorithm}[t]
+  \caption{How Bogosort works.}
+  \label{a:Bogosort}
+  \begin{algorithmic}[1]
+    \REQUIRE Unsorted dataset $d$, length of dataset $n$
+    \STATE shuffle $d$
+    \FOR{$i = 2 \dots n$}
+      \IF{$d_{i-1} > d_i$}
+        \STATE goto 1
+      \ENDIF
+    \ENDFOR
+  \end{algorithmic}
+\end{algorithm}
+
+
+
+\subsection{Minor idea 2}
+\label{s:Contribution-2-Major-2-Minor-2}
+Develop your idea! For example, the particular properties of your implementation.
+
+\subsubsection{For structuring the section...}
+Develop your idea!
+
+\subsubsection{For structuring the section...}
+Develop your idea! If you think it may be useful, you may print excerpts from your implementation. For example, in \autoref{l:Bogosort}, we implement Bogosort in a software program. However, do not go crazy with this. The reader might now know the programming language you use. If you can use pseudo-code (\ie \texttt{\textbackslash{}begin\{algorithmic\}...\textbackslash{}end\{algorithmic\}}) instead, use it!
+
+\begin{lstlisting}[
+caption={Classic implementation of Bogosort.},
+label=l:Bogosort,
+language=Python,
+numbers=none,
+frame=single,
+float
+]
+def is_sorted(d):
+    for i in range(len(d) - 1):
+        if d[i] > d[i + 1]:
+            return False
+    return True
+
+def bogosort(d):
+    while not is_sorted(d):
+        random.shuffle(d)
+    return data
+\end{lstlisting}
+
+
+\section{Summary}
+\label{s:Contribution-2-Summary}
+
+Summarize contribution 2. Highlight what makes it relevant. Assuming that the reader knows the details of the contribution now, you should also try to clearly explain in what particular key properties this method deviates from existing research.

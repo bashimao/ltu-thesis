@@ -8,6 +8,16 @@
 % postcards I received so far is available online at 
 % http://postcards.miede.de
 %
+%
+% !!! ATTENTION !!! ATTENTION !!! ATTENTION !!! ATTENTION !!!
+%
+% This version was modified to comply with the formatting guidelines
+% of the Graduate Research School of La Trobe University.
+% ~ October 2018 / Matthias Langer (https://github.com/bashimao/ltu-thesis)
+%
+% !!! ATTENTION !!! ATTENTION !!! ATTENTION !!! ATTENTION !!!
+%
+%
 % License:
 % This program is free software; you can redistribute it and/or modify
 % it under the terms of the GNU General Public License as published by
@@ -37,7 +47,7 @@
 %   => this can be fixed by using pdftex 1.40 or later and enabling the
 %      option pdfspacing of this package
 %
-% ********************************************************************  
+% ********************************************************************
 \NeedsTeXFormat{LaTeX2e}%[2015/01/01] % fixed via latexrelease package, see below
 \ProvidesPackage{classicthesis}[2015/09/06 v4.2 Typographic style for a classic-looking thesis]
 %\PassOptionsToPackage{latest}{latexrelease} % replacement for fixltx2e, emulate newer kernel version if older is detected
@@ -92,12 +102,14 @@
 % subfig-related stuff
 \@ifpackageloaded{subfig}%
     {\setboolean{@subfig}{true}%
-    }{\relax}
+    }{\relax}%
+
 \@ifpackageloaded{subfigure}%
     {\setboolean{@subfig}{true}%
      \PackageWarningNoLine{classicthesis}{Package "subfigure" and option "subfigure" are deprecated, %
-                                            use "subfig" instead.}
-    }{\relax}
+                                            use "subfig" instead.}%
+    }{\relax}%
+
 \ifthenelse{\boolean{@subfig}}%
     {\PassOptionsToPackage{subfigure}{tocloft}%
     }{\relax}%
@@ -195,9 +207,9 @@
 % specialists: MinionPro
 \ifthenelse{\boolean{@minionpro}}%
     {%
-            % in order have Euler math fonts work with Minion, special option is needed
-            \ifthenelse{\boolean{@eulermath}}%
-            {%
+        % in order have Euler math fonts work with Minion, special option is needed
+        \ifthenelse{\boolean{@eulermath}}%
+        {%
             \PassOptionsToPackage{opticals,mathlf,onlytext}{MinionPro}%
             \RequirePackage{MinionPro} %  opticals, fullfamily, osf
         }{%
@@ -266,6 +278,7 @@
             \PackageInfo{classicthesis}{A4 paper, Palatino or other}
             \areaset[current]{336pt}{750pt} % ~ 336 * factor 2 + 33 head + 42 \the\footskip 
 %            \areaset{336pt}{761pt} % 686 (factor 2.2) + 33 head + 42 head \the\footskip 10pt     
+            \areaset[current]{400pt}{750pt}
             \setlength{\marginparwidth}{7em}%
             \setlength{\marginparsep}{2em}%
         }%
@@ -301,7 +314,8 @@
    \parindent=0pt \lineskip=0pt \lineskiplimit=0pt %
    \tolerance=2000 \hyphenpenalty=300 \exhyphenpenalty=300%
    \doublehyphendemerits=100000%
-   \finalhyphendemerits=\doublehyphendemerits}
+   \finalhyphendemerits=\doublehyphendemerits%
+}
 %\DeclareRobustCommand{\graffito}[1]{\marginpar%
 % [\graffito@setup\raggedleft\hspace{0pt}{#1}]%
 % {\graffito@setup\raggedright\hspace{0pt}{#1}}}
@@ -318,7 +332,7 @@
 
 % ********************************************************************
 % Fancy Stuff
-% ********************************************************************  
+% ********************************************************************
 \RequirePackage{booktabs} % for better rules in tables
 \RequirePackage{textcase} % for \MakeTextUppercase
 
@@ -344,9 +358,9 @@
         }%
     }
 
-% ********************************************************************                
+% ********************************************************************
 % headlines
-% ********************************************************************  
+% ********************************************************************
 %\PassOptionsToPackage{automark}{scrpage2}
 \PassOptionsToPackage{automark}{scrlayer-scrpage}
     %\RequirePackage{scrpage2} % provides headers and footers (KOMA Script)
@@ -367,12 +381,12 @@
             {\section*{\contentsname}}%nochapters
             {\chapter*{\contentsname}}%chapters
             \@mkboth{\spacedlowsmallcaps{\contentsname}}{\spacedlowsmallcaps{\contentsname}}}
-              
     
+
 % ********************************************************************
 % layout of the chapter-, section-, subsection-, subsubsection-,
 % paragraph and description-headings
-% ********************************************************************             
+% ********************************************************************
 \RequirePackage{titlesec}
         % parts
         \ifthenelse{\boolean{@parts}}%
@@ -381,21 +395,16 @@
         \newcommand{\ct@parttext}{\relax} % Thanks to Ivo
         \newcommand{\ctparttext}[1]{\renewcommand{\ct@parttext}{#1 \relax}} 
     \titleformat{\part}[display]
-        {\normalfont\centering\large}%
+        {\normalfont\centering\LARGE}%
         {\thispagestyle{empty}\partname~\MakeTextUppercase{\thepart}}{1em}%
         {\color{Maroon}\spacedallcaps}[\bigskip\normalfont\normalsize\color{Black}\begin{quote}\ct@parttext\end{quote}]
     }{\relax}
     % chapters
-    \ifthenelse{\boolean{@linedheaders}}%
-    {% lines above and below, number right
-    \titleformat{\chapter}[display]%             
-        {\relax}{\raggedleft{\color{halfgray}\chapterNumber\thechapter} \\ }{0pt}%
-        {\titlerule\vspace*{.9\baselineskip}\raggedright\spacedallcaps}[\normalsize\vspace*{.8\baselineskip}\titlerule]%
-    }{% something like Bringhurst  
     \titleformat{\chapter}[display]%
-        {\relax}{\mbox{}\oldmarginpar{\vspace*{-3\baselineskip}\color{halfgray}\chapterNumber\thechapter}}{0pt}%
-        {\raggedright\spacedallcaps}[\normalsize\vspace*{.8\baselineskip}\titlerule]% 
-    }
+        {\relax\Large}
+        {\mbox{}\raggedleft\textcolor{halfgray}{\chapterNumber\thechapter}}
+        {0pt}%
+        {\raggedright\color{Maroon}\spacedallcaps}[\color{Black}\normalsize\vspace*{.8\baselineskip}\titlerule\vspace*{0.45\baselineskip}]
     % sections \FloatBarrier
     \titleformat{\section}
         {\relax}{\textsc{\MakeTextLowercase{\thesection}}}{1em}{\spacedlowsmallcaps}
@@ -409,7 +418,7 @@
     \titleformat{\paragraph}[runin]
         {\normalfont\normalsize}{\theparagraph}{0pt}{\spacedlowsmallcaps}    
     % descriptionlabels
-        \renewcommand{\descriptionlabel}[1]{\hspace*{\labelsep}\spacedlowsmallcaps{#1}}   % spacedlowsmallcaps textit textsc                  
+        \renewcommand{\descriptionlabel}[1]{\hspace*{\labelsep}\textbf{#1}}   % spacedlowsmallcaps textit textsc                  
     % spacing
     \ifthenelse{\boolean{@nochapters}}%
         {\relax}%
@@ -423,7 +432,10 @@
 % ********************************************************************
 \PassOptionsToPackage{titles}{tocloft}
     \RequirePackage{tocloft}
-    % avoid page numbers being right-aligned in fixed-size box              
+    \renewcommand{\cftpartleader}{\cftdotfill{\cftdotsep}}
+    \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+
+    % avoid page numbers being right-aligned in fixed-size box
     \newlength{\newnumberwidth}
     \settowidth{\newnumberwidth}{999} % yields overfull hbox warnings for pages > 999
     \cftsetpnumwidth{\newnumberwidth}
@@ -436,65 +448,67 @@
     \newlength{\newchnumberwidth}
     \settowidth{\newchnumberwidth}{.} % <--- tweak here if more space required
     \ifthenelse{\boolean{@manychapters}}% <--- many chapters option
-    {%    
+    {%
         \addtolength{\cftchapnumwidth}{\newchnumberwidth}%
         \addtolength{\cftsecnumwidth}{\newchnumberwidth}
         \addtolength{\cftsecindent}{\newchnumberwidth}
         \addtolength{\cftsubsecnumwidth}{\newchnumberwidth}
         \addtolength{\cftsubsecindent}{2\newchnumberwidth}
         \addtolength{\cftsubsubsecnumwidth}{\newchnumberwidth}
-      }{\relax}%
-      
-    % pagenumbers right after the titles
+    }{\relax}%
+    
     % parts
     \ifthenelse{\boolean{@parts}}%
     {%
-      \renewcommand{\thepart}{\roman{part}}%
-      \renewcommand{\cftpartpresnum}{\scshape}%  \MakeTextLowercase
-%      \renewcommand{\cftpartaftersnum}{\cftchapaftersnum}%
-%      \renewcommand{\cftpartaftersnumb}{\quad}%
-%      \setlength{\cftpartnumwidth}{\cftpartnumwidth}
-      \renewcommand{\cftpartfont}{\color{Maroon}\normalfont}%
-      \renewcommand{\cftpartpagefont}{\normalfont}%
-      \ifthenelse{\boolean{@dottedtoc}}{\relax}%
-      {%
-        \renewcommand{\cftpartleader}{\hspace{1.5em}}% 
-        \renewcommand{\cftpartafterpnum}{\cftparfillskip}%
-      }%        
-      \setlength{\cftbeforepartskip}{1em}%
-      \setlength{\cftbeforechapskip}{.1em}%
-      \setlength{\beforebibskip}{\cftbeforepartskip}%
-     }{\relax}
+        \renewcommand{\thepart}{\roman{part}}%
+        \renewcommand{\cftpartpresnum}{\scshape}%  \MakeTextLowercase
+        % \renewcommand{\cftpartaftersnum}{\cftchapaftersnum}%
+        % \renewcommand{\cftpartaftersnumb}{\quad}%
+        % \setlength{\cftpartnumwidth}{\cftpartnumwidth}
+        \renewcommand{\cftpartfont}{\color{Maroon}\normalfont}%
+        \renewcommand{\cftpartpagefont}{\normalfont}%
+        \ifthenelse{\boolean{@dottedtoc}}{\relax}%
+        {%
+            \renewcommand{\cftpartleader}{\hspace{1.5em}}% 
+            \renewcommand{\cftpartafterpnum}{\cftparfillskip}%
+        }%
+        \setlength{\cftbeforepartskip}{1em}%
+        \setlength{\cftbeforechapskip}{.1em}%
+        \setlength{\beforebibskip}{\cftbeforepartskip}%
+    }{\relax}
+
     % chapters
     \ifthenelse{\boolean{@nochapters}}%
-        {\relax}%
-        {%
-                        \renewcommand{\cftchappresnum}{\scshape\MakeTextLowercase}%
-            \renewcommand{\cftchapfont}{\normalfont}%
-            \renewcommand{\cftchappagefont}{\normalfont}%
-            \ifthenelse{\boolean{@dottedtoc}}{\relax}%
-                {%
-                \renewcommand{\cftchapleader}{\hspace{1.5em}}% 
-                \renewcommand{\cftchapafterpnum}{\cftparfillskip}% 
-            }
-            %\setlength{\cftbeforechapskip}{.1em}%           
-        }
-    % sections
-    \ifthenelse{\boolean{@nochapters}}%        
-      {%
-          \setlength{\cftbeforesecskip}{.1em}%
-          \setlength{\beforebibskip}{1em}%
-      }%
-      {\relax}
-        \renewcommand{\cftsecpresnum}{\scshape\MakeTextLowercase}%
-        \renewcommand{\cftsecfont}{\normalfont}%
-      \renewcommand{\cftsecpagefont}{\normalfont}%
+    {\relax}%
+    {%
+        \renewcommand{\cftchappresnum}{\scshape\MakeTextLowercase}%
+        \renewcommand{\cftchapfont}{\color{Maroon}\normalfont}%
+        \renewcommand{\cftchappagefont}{\normalfont}%
         \ifthenelse{\boolean{@dottedtoc}}{\relax}%
-        {%        
+        {%
+            \renewcommand{\cftchapleader}{\hspace{1.5em}}%
+            \renewcommand{\cftchapafterpnum}{\cftparfillskip}%
+        }
+        %\setlength{\cftbeforechapskip}{.1em}%
+    }
+
+    % sections
+    \ifthenelse{\boolean{@nochapters}}%
+    {%
+        \setlength{\cftbeforesecskip}{.1em}%
+        \setlength{\beforebibskip}{1em}%
+    }%
+    {\relax}
+    \renewcommand{\cftsecpresnum}{\scshape\MakeTextLowercase}%
+    \renewcommand{\cftsecfont}{\normalfont}%
+    \renewcommand{\cftsecpagefont}{\normalfont}%
+    \ifthenelse{\boolean{@dottedtoc}}{\relax}%
+    {%
         \renewcommand{\cftsecleader}{\hspace{1.5em}}% 
         \renewcommand{\cftsecafterpnum}{\cftparfillskip}%
-      }
-      \ifthenelse{\boolean{@tocaligned}}{\renewcommand{\cftsecindent}{0em}}{\relax}
+    }%
+    \ifthenelse{\boolean{@tocaligned}}{\renewcommand{\cftsecindent}{0em}}{\relax}
+
     % subsections
         \renewcommand{\cftsubsecpresnum}{\scshape\MakeTextLowercase}%
         \renewcommand{\cftsubsecfont}{\normalfont}%
@@ -513,7 +527,7 @@
         \renewcommand{\cftsubsubsecafterpnum}{\cftparfillskip}%   
       }             
       \ifthenelse{\boolean{@tocaligned}}{\renewcommand{\cftsubsubsecindent}{0em}}{\relax}
-    % figures     
+    % figures
         \renewcommand{\cftfigpresnum}{\scshape\MakeTextLowercase}% 
         \renewcommand{\cftfigfont}{\normalfont}%                 
       \ifthenelse{\boolean{@dottedtoc}}{\relax}%
@@ -544,23 +558,23 @@
     \ifthenelse{\boolean{@listings}}%        
     {%
         \newlistof{listings}{lol}{\lstlistlistingname}%
-            \renewcommand{\cftlistingspresnum}{\scshape\MakeTextLowercase}%
-            \renewcommand{\cftlistingsfont}{\normalfont}%
-            \renewcommand{\cftlistingspresnum}{\lstlistingname~}%
-            \renewcommand{\cftlistingspagefont}{\normalfont}%
-            \ifthenelse{\boolean{@dottedtoc}}{\relax}%
-      {%  
-                \renewcommand{\cftlistingsleader}{\hspace{1.5em}}%
-                \renewcommand{\cftlistingsafterpnum}{\cftparfillskip}%
-            }
-            \newlength{\listingslabelwidth}%
-            \settowidth{\listingslabelwidth}{\cftlistingspresnum~999}%
-            \addtolength{\listingslabelwidth}{2.5em}%
-            %\cftsetindents{listings}{0em}{\listingslabelwidth}%
-            \cftsetindents{listings}{0em}{\figurelabelwidth}%
-            \let\l@lstlisting\l@listings%
-            \let\lstlistoflistings\listoflistings%
-            }{\relax}%
+        \renewcommand{\cftlistingspresnum}{\scshape\MakeTextLowercase}%
+        \renewcommand{\cftlistingsfont}{\normalfont}%
+        \renewcommand{\cftlistingspresnum}{\lstlistingname~}%
+        \renewcommand{\cftlistingspagefont}{\normalfont}%
+        \ifthenelse{\boolean{@dottedtoc}}{\relax}%
+        {%
+            \renewcommand{\cftlistingsleader}{\hspace{1.5em}}%
+            \renewcommand{\cftlistingsafterpnum}{\cftparfillskip}%
+        }
+        \newlength{\listingslabelwidth}%
+        \settowidth{\listingslabelwidth}{\cftlistingspresnum~999}%
+        \addtolength{\listingslabelwidth}{2.5em}%
+        %\cftsetindents{listings}{0em}{\listingslabelwidth}%
+        \cftsetindents{listings}{0em}{\figurelabelwidth}%
+        \let\l@lstlisting\l@listings%
+        \let\lstlistoflistings\listoflistings%
+    }{\relax}%
 
     % dirty work-around to get the spacing after the toc/lot/lof-titles right    
     \ifthenelse{\boolean{@parts}}%        

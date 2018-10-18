@@ -1,0 +1,124 @@
+% (unofficial) La Trobe PhD Thesis Template
+% Copyright (C) 2018 Matthias Langer
+%
+% This program is free software; you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation; either version 2 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License along
+% with this program; if not, write to the Free Software Foundation, Inc.,
+% 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+%
+\documentclass[oneside,openright,titlepage,numbers=noenddot,headinclude,footinclude=true,cleardoublepage=empty,listof=totoc,paper=a4,fontsize=11pt,american,BCOR=5mm]{scrreprt}
+
+% -----------------------------------------------------------------------------
+%   CONFIGURATION
+% -----------------------------------------------------------------------------
+% Thesis and submission:
+\newcommand{\myTitle}{Using Thinking Machines to Alleviate our Dependency on Guild Navigators}
+\newcommand{\mySubmissionYear}{2018}
+\newcommand{\mySubmissionMonth}{October}
+\newcommand{\mySubmissionDay}{31}
+
+% Regarding yourself:
+\newcommand{\myFirstName}{Feyd-Rautha}
+\newcommand{\myLastName}{Harkonnen}
+\newcommand{\myWebsite}{https://en.wikipedia.org/wiki/Feyd-Rautha}
+\newcommand{\myBirthYear}{1965}
+\newcommand{\myBirthMonth}{January}
+\newcommand{\myBirthDay}{31}
+\newcommand{\myBirthPlace}{Lankiveil}
+
+% Primary supervisor:
+\newcommand{\myProfTitle}{Prof.}
+\newcommand{\myProfFirstName}{Piter}
+\newcommand{\myProfLastName}{De Vries}
+\newcommand{\myProfWebsite}{http://homepage.cs.latrobe.edu.au/pdevries}
+
+% Co-supervisor:
+\newcommand{\myOtherProfTitle}{Dr}
+\newcommand{\myOtherProfFirstName}{Thufir}
+\newcommand{\myOtherProfLastName}{Hawat}
+\newcommand{\myOtherProfWebsite}{http://homepage.cs.latrobe.edu.au/hthufir}
+
+% University related:
+\newcommand{\myDepartment}{Department of Computer Science and Information Technology}
+\newcommand{\myFaculty}{College of Science, Health and Engineering}
+\newcommand{\mySchool}{School of Engineering and Mathematical Sciences}
+\newcommand{\myUni}{La Trobe University}
+% -----------------------------------------------------------------------------
+
+\input{classicthesis-config}
+\addbibresource{library.bib}
+
+\begin{document}
+  \frenchspacing
+  \raggedbottom
+  \selectlanguage{american}
+  
+  \pagestyle{plain}
+  \pagenumbering{roman}
+  
+  \singlespacing
+  \input{text/ch0-title}
+  \input{text/ch0-backside}
+  
+  \onehalfspacing
+  \input{text/ch0-contents}
+  
+  \chapter*{Abstract}
+  \addcontentsline{toc}{chapter}{Abstract}
+  \input{text/ch0-abstract}
+  
+  \chapter*{Statement of Authorship}
+  \addcontentsline{toc}{chapter}{Declaration of Authorship}
+  \input{text/ch0-declaration}
+  
+  \input{text/ch0-acknowledgements}
+  \input{text/ch0-publications}
+  \input{text/ch0-dedication}
+  
+  \cleardoublepage
+  \pagestyle{scrheadings}
+  \pagenumbering{arabic}
+  \onehalfspacing
+  
+  \chapter{Introduction}\label{c:Introduction}
+  \input{text/ch1}
+  
+  \chapter{Background}\label{c:Background}
+  \input{text/ch2}
+  
+  \chapter{Related Works}\label{c:Related-Works}
+  \input{text/ch3}
+  
+  \chapter{Major Contribution 1}\label{c:Contribution-1}
+  \input{text/ch4}
+  
+  \chapter{Major Contribution 2}\label{c:Contribution-2}
+  \input{text/ch5}
+
+  \chapter{Experiments}\label{c:Experiments}
+  \input{text/ch6}
+  
+  \chapter{Conclusions}\label{c:Conclusions}
+  \input{text/ch7}
+  
+  \cleardoublepage
+  \appendix
+  
+  \singlespacing
+  \input{text/app-bibliography}
+  \cleardoublepage
+  
+  \pagestyle{empty}
+  \onehalfspacing
+  \input{text/app-colophon}
+
+\end{document}

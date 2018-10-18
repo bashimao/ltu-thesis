@@ -1,0 +1,36 @@
+\hinttext{!!!ACTION REQUIRED!!!}
+\hinttext{The structure I defined is generic and will most likely have to be adapted. I suggest that you skim through the pages and then clear the files \texttt{text/ch2.tex} to \texttt{text/ch7.tex} before you start writing.}
+
+The structure for these kinds of chapters is highly dependent on your research. See \autoref{c:Contribution-2} for a very generic layout.
+
+However, in case you want to use equations you may do so as shown in \autoref{e:Mean} and \autoref{e:Standard-Deviation}.
+\begin{eqnarray}
+\mu    &=& \frac{1}{n} \sum_{i=1}^{n} x_i
+\label{e:Mean} \\
+\sigma &=& \sqrt{\frac{1}{n - 1} \sum_{i=1}^{n} (x_i - \mu)^2}
+\label{e:Standard-Deviation}
+\end{eqnarray}
+
+In case you think that figures are more appropriate, you may use them as demonstrated in \autoref{f:LaTrobe-Logo} and \autoref{f:LaTrobe-Code-of-Arms}. I personally prefer not to place figures explicitly. Instead, I just define \texttt{[t]} to align them at the top of the page and rely on \LaTeX{} to automatically figure out the page on which they should appear. In some cases this results in an extra page being injected. There is no upper page limit for a thesis. However, note that word count limits exist.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.5\textwidth]{figures/latrobe-logo}
+\caption{The logo of La Trobe University.}
+\label{f:LaTrobe-Logo}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=4cm]{figures/latrobe-coat-of-arms}
+\caption{La Trobe University's coat of arms.}
+\label{f:LaTrobe-Code-of-Arms}
+\end{figure}
+
+Figures, tables, pseudo-code algorithms and source code listings will automatically be indexed and listed at the beginning of the thesis.
+
+
+\section{Summary}
+\label{s:Contribution-1-Summary}
+
+The final section of each major chapter should summarize the chapter. In comparison to the chapter, the summary should be short ($\frac{1}{2}$ to $2$ pages is normal).
