@@ -1,6 +1,6 @@
 # *(Unofficial)* La Trobe PhD Thesis Template
 
-Are you pursuing a PhD at La Trobe University? Are you looking for a LaTeX thesis template? I had the same problem. To my knowledge, GRS does not offer a LaTeX template yet. I started writing my thesis using the classicthesis thesis template by [André Miede](https://bitbucket.org/amiede/classicthesis). That worked well, but I had to customize and extend the template to comply with our formatting guidelines. And that is how we ended up here. This is what I have finally come up with. Let's call it the *(unofficial)* La Trobe PhD Thesis Template. Feel free to use it!
+Are you pursuing a PhD at La Trobe University? Are you looking for a LaTeX thesis template? I had the same problem. To my knowledge, GRS does not offer a LaTeX template yet. I started writing my thesis using the classicthesis thesis template by [André Miede](https://bitbucket.org/amiede/classicthesis). That worked well, but I had to customize and extend the template to comply with our formatting guidelines. And that is how we end up here. This is what I have finally come up with. Let's call it the *(unofficial)* La Trobe PhD Thesis Template. Feel free to use it!
 
 ## Organization
 `thesis.tex` is the root document and includes the individual chapters. The content of the chapters can be found under `text/`. It is pretty self-explaining. Figures should be placed under `figures/`. Bibliography should be put into `library.bib`.
